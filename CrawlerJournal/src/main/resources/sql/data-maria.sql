@@ -1,0 +1,2 @@
+--sec_user
+insert into sec_user(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, USER_CODE, USER_NAME, USER_PASSWORD, USER_TYPE ,OFFICE) values(1, 1, 1, sysdate(), sysdate(), 'Y', 'admin', 'administrator', '8w5y4CYvLHP69kq5Wm2vHDVfPX1IOcrpskUugS/4KZN6budffcIYbfhpEL6HmNZ0', 'ADMIN' , 'IT');

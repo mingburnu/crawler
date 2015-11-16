@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <union-subclass name="j.index.module.security.entity.SecUser" table="sec_user" extends="j.index.core.entity.GenericEntity">
+        
+        <property name="userCode" column="USER_CODE" length="20" type="string" not-null="true" unique="true" />
+        
+        <property name="userName" column="USER_NAME" length="50" type="string" not-null="true" />
+        
+        <property name="userPassword" column="USER_PASSWORD" length="200" type="string" not-null="true" />
+ 
+ 		<property name="workOffice" column="WORK_OFFICE" length="10" type="string" />
+ 		
+ 		<property name="telCty" column="TEL_CTY" length="10" type="integer" />
+ 		
+ 		<property name="telArea" column="TEL_AREA" length="10" type="integer" />
+ 		
+ 		<property name="tel" column="TEL" length="10" type="integer" />
+ 		
+ 		<property name="stopDate" column="STOP_DATE" 
+	        type="org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime" />
+ 
+    </union-subclass>
+
+</hibernate-mapping>

@@ -1,0 +1,118 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.objectFactory"
+		value="org.apache.struts2.spring.StrutsSpringObjectFactory" />
+
+	<!-- allow submit action in button -->
+	<constant name="struts.mapper.action.prefix.enabled" value="true" />
+
+	<!-- not allow call method by url -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+
+	<!--allow upload file size -->
+	<constant name="struts.devMode" value="false" />
+
+	<constant name="struts.multipart.maxSize" value="9223372036854775807" />
+
+	<package name="global" extends="struts-default">
+		<interceptors>
+			<interceptor name="loginSessionInterceptor"
+				class="j.index.core.interceptor.LoginSessionInterceptor" />
+
+			<interceptor-stack name="defaultInterceptor">
+				<interceptor-ref name="loginSessionInterceptor" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+
+		<default-interceptor-ref name="defaultInterceptor" />
+
+		<global-results>
+			<result name="input">/sessionTimeOut.jsp</result>
+			<result name="exception">/error.jsp</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception"
+				result="exception" />
+		</global-exception-mappings>
+	</package>
+
+	<package name="authorizationAction" namespace="/authorization"
+		extends="struts-default">
+		<global-results>
+			<result name="input">/login.jsp</result>
+			<result name="login">/login.jsp</result>
+			<result name="index">/WEB-INF/jsp/index.jsp</result>
+		</global-results>
+		<action name="login" class="authorizationAction" method="login" />
+		<action name="logout" class="authorizationAction" method="logout" />
+	</package>
+
+	<package name="pageAction" namespace="/page" extends="global">
+		<action name="section" class="commonPageAction">
+			<result name="success">/WEB-INF/jsp/layout/section.jsp</result>
+		</action>
+	</package>
+
+	<package name="crudAction" namespace="/crud" extends="global">
+		<action name="*.*.list" class="{2}Action" method="list">
+			<result name="input">/WEB-INF/jsp/module/{1}/{2}/{2}List.jsp</result>
+			<result name="list">/WEB-INF/jsp/module/{1}/{2}/{2}List.jsp</result>
+			<result name="view">/WEB-INF/jsp/module/{1}/{2}/{2}Edit.jsp</result>
+		</action>
+		
+		<action name="*.*.case.list" class="{2}Action" method="list">
+			<result name="input">/WEB-INF/jsp/module/{1}/{2}/{2}CaseList.jsp
+			</result>
+			<result name="list">/WEB-INF/jsp/module/{1}/{2}/{2}CaseList.jsp
+			</result>
+		</action>
+		<action name="*.*.*" class="{2}Action" method="{3}">
+			<result name="input">/WEB-INF/jsp/module/{1}/{2}/{2}Edit.jsp</result>
+			<result name="edit">/WEB-INF/jsp/module/{1}/{2}/{2}Edit.jsp</result>
+			<result name="delete">/WEB-INF/jsp/module/{1}/{2}/{2}Edit.jsp</result>
+			<result name="list">/WEB-INF/jsp/module/{1}/{2}/{2}List.jsp</result>
+		</action>
+	</package>
+
+	<package name="webAction" namespace="/web" extends="global">
+		<action name="*.*.*" class="{2}WebAction" method="{3}">
+			<result name="convert">/WEB-INF/jsp/module/{1}/{2}/{2}Convert.jsp
+			</result>
+			<result name="policy">/WEB-INF/jsp/module/{1}/{2}/{2}Policy.jsp
+			</result>
+		</action>
+	</package>
+
+	<package name="jsonAction" namespace="/json" extends="json-default">
+		<action name="*.*.*" class="{2}WebAction" method="{3}">
+			<result name="success" type="json">
+				<param name="root">dataMap</param>
+			</result>
+		</action>
+	</package>
+
+	<package name="json-default" extends="global">
+		<result-types>
+			<result-type name="json" class="org.apache.struts2.json.JSONResult" />
+		</result-types>
+		<interceptors>
+			<interceptor name="json"
+				class="org.apache.struts2.json.JSONInterceptor" />
+		</interceptors>
+	</package>
+
+	<package name="edAction" namespace="/edcrud" extends="global">
+		<action name="*.*.*.*" class="{2}Action" method="{3}">
+			<result name="input">/WEB-INF/jsp/module/{1}/{2}/{2}Edit{4}.jsp
+			</result>
+			<result name="edit">/WEB-INF/jsp/module/{1}/{2}/{2}Edit{4}.jsp
+			</result>
+			<result name="delete">/WEB-INF/jsp/module/{1}/{2}/{2}Edit{4}.jsp
+			</result>
+		</action>
+	</package>
+</struts>
+

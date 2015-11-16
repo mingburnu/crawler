@@ -1,0 +1,34 @@
+----sec_user
+--insert into sec_user(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, USER_CODE, USER_NAME, USER_PASSWORD) values(1, 1, 1, sysdate(), sysdate(), 'Y', 'admin', '系統管理員', '8w5y4CYvLHP69kq5Wm2vHDVfPX1IOcrpskUugS/4KZN6budffcIYbfhpEL6HmNZ0');
+--insert into sec_user(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, USER_CODE, USER_NAME, USER_PASSWORD) values(2, 1, 1, sysdate(), sysdate(), 'Y', 'user1', '測試員1', 'IhwkPojLTDYMdvLcErW+mmA51UG13mVJe2efI+9WFG8jkEaW46Jn11n2n4rIuVgr');
+--insert into sec_user(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, USER_CODE, USER_NAME, USER_PASSWORD) values(3, 1, 1, sysdate(), sysdate(), 'Y', 'user2', '測試員2', 'cFiHTetkFLk0geGfw3vMtzDa0ciX1oXW4jA8HbfyOOK7lYK8YbxMTeffwNyVW60p');
+--insert into sec_user(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, USER_CODE, USER_NAME, USER_PASSWORD) values(4, 1, 1, sysdate(), sysdate(), 'Y', 'user3', '測試員3', 'o1KRlyNSiNQPWI6QemQfs94J7Jimxcy/3GYPRa6b0kFgD3mVM76PU+/D67feGDrh');
+--insert into sec_user(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, USER_CODE, USER_NAME, USER_PASSWORD) values(5, 1, 1, sysdate(), sysdate(), 'Y', 'user4', '測試員4', 'o1KRlyNSiNQPWI6QemQfs94J7Jimxcy/3GYPRa6b0kFgD3mVM76PU+/D67feGDrh');
+--insert into sec_user(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, USER_CODE, USER_NAME, USER_PASSWORD) values(6, 1, 1, sysdate(), sysdate(), 'Y', 'user5', '測試員5', 'o1KRlyNSiNQPWI6QemQfs94J7Jimxcy/3GYPRa6b0kFgD3mVM76PU+/D67feGDrh');
+--insert into sec_user(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, USER_CODE, USER_NAME, USER_PASSWORD) values(7, 1, 1, sysdate(), sysdate(), 'Y', 'user6', '測試員6', 'o1KRlyNSiNQPWI6QemQfs94J7Jimxcy/3GYPRa6b0kFgD3mVM76PU+/D67feGDrh');
+--insert into sec_user(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, USER_CODE, USER_NAME, USER_PASSWORD) values(8, 1, 1, sysdate(), sysdate(), 'Y', 'user7', '測試員7', 'o1KRlyNSiNQPWI6QemQfs94J7Jimxcy/3GYPRa6b0kFgD3mVM76PU+/D67feGDrh');
+--insert into sec_user(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, USER_CODE, USER_NAME, USER_PASSWORD) values(9, 1, 1, sysdate(), sysdate(), 'Y', 'user8', '測試員8', 'o1KRlyNSiNQPWI6QemQfs94J7Jimxcy/3GYPRa6b0kFgD3mVM76PU+/D67feGDrh');
+--insert into sec_user(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, USER_CODE, USER_NAME, USER_PASSWORD) values(10, 1, 1, sysdate(), sysdate(), 'Y', 'user9', '測試員9', 'o1KRlyNSiNQPWI6QemQfs94J7Jimxcy/3GYPRa6b0kFgD3mVM76PU+/D67feGDrh');
+--insert into sec_user(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, USER_CODE, USER_NAME, USER_PASSWORD) values(11, 1, 1, sysdate(), sysdate(), 'Y', 'user10', '測試員10', 'o1KRlyNSiNQPWI6QemQfs94J7Jimxcy/3GYPRa6b0kFgD3mVM76PU+/D67feGDrh');
+--insert into sec_user(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, USER_CODE, USER_NAME, USER_PASSWORD) values(12, 1, 1, sysdate(), sysdate(), 'Y', 'user11', '測試員11', 'o1KRlyNSiNQPWI6QemQfs94J7Jimxcy/3GYPRa6b0kFgD3mVM76PU+/D67feGDrh');
+--insert into sec_user(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, USER_CODE, USER_NAME, USER_PASSWORD) values(13, 1, 1, sysdate(), sysdate(), 'Y', 'user12', '測試員AA', 'o1KRlyNSiNQPWI6QemQfs94J7Jimxcy/3GYPRa6b0kFgD3mVM76PU+/D67feGDrh');
+--
+----set_class
+--insert into SET_CLASS(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, CODE, LOCAL_NAME, ENG_NAME, DESCRIPT) values(1, 1, 1, sysdate(), sysdate(), 'Y', 'c01', '甲式', 'A', 'aaaaa');
+--insert into SET_CLASS(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, CODE, LOCAL_NAME, ENG_NAME, DESCRIPT) values(2, 1, 1, sysdate(), sysdate(), 'Y', 'c02', '乙式', 'B', 'bbbbb');
+--insert into SET_CLASS(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, CODE, LOCAL_NAME, ENG_NAME, DESCRIPT) values(3, 1, 1, sysdate(), sysdate(), 'Y', 'c03', '丙式', 'C', 'ccccc');
+--
+----set_clm_item
+--insert into SET_CLM_ITEM(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, CODE, LOCAL_NAME, ENG_NAME) values(1, 1, 1, sysdate(), sysdate(), 'Y', 'i01', '傷害醫療給付', 'injury');
+--insert into SET_CLM_ITEM(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, CODE, LOCAL_NAME, ENG_NAME) values(2, 1, 1, sysdate(), sysdate(), 'Y', 'i02', '殘廢給付', 'permanent');
+--insert into SET_CLM_ITEM(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, CODE, LOCAL_NAME, ENG_NAME) values(3, 1, 1, sysdate(), sysdate(), 'Y', 'i03', '死亡給付', 'dead');
+--
+----set_clm_nature
+--insert into SET_CLM_NATURE(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, CODE, LOCAL_NAME, ENG_NAME) values(1, 1, 1, sysdate(), sysdate(), 'Y', 'n01', '正常賠款', 'default');
+--insert into SET_CLM_NATURE(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, CODE, LOCAL_NAME, ENG_NAME) values(2, 1, 1, sysdate(), sysdate(), 'Y', 'n02', '協議賠款', 'agreement');
+--insert into SET_CLM_NATURE(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, CODE, LOCAL_NAME, ENG_NAME) values(3, 1, 1, sysdate(), sysdate(), 'Y', 'n03', '優惠賠款', 'discount ');
+--
+----set_amount_limit
+--insert into SET_AMOUNT_LIMIT(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, CLASS_ID, OFFICE_ID, FROM_ID, AMOUNT, DESCRIPT) values(1, 1, 1, sysdate(), sysdate(), 'Y', 1111, 108, 518, 1000, 'FIRST');
+--insert into SET_AMOUNT_LIMIT(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, CLASS_ID, OFFICE_ID, FROM_ID, AMOUNT, DESCRIPT) values(2, 1, 1, sysdate(), sysdate(), 'Y', 1112, 109, 519, 1001, 'SECOND');
+--insert into SET_AMOUNT_LIMIT(ID, created_By, last_Modified_By, created_Date, last_Modified_Date, STATUS, CLASS_ID, OFFICE_ID, FROM_ID, AMOUNT, DESCRIPT) values(3, 1, 1, sysdate(), sysdate(), 'Y', 1113, 110, 520, 1002, 'THIRD');
